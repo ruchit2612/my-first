@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Form</title>
+    </head>
+    <body>
+        
+        <form action="h1.html" method="get">
+            <fieldset>
+                <legend>Signup</legend>
+                <table border="2" bgcolor="lightyellow112w3">
+                <tr> 
+                    <td><label>Name</label></td>
+                    <td><input type="text" name="'fname" required placeholder="enter name"></td>
+                </tr>
+                <tr>
+                    <td><label>Password</label></td>
+                    <td><input type="password" name="pwd" placeholder="enter password" required="@" minlength="3" maxlength="20"></td>
+                </tr>
+                <tr>
+                    <td>gender</td>
+                  <td><label><input type="radio" name="gender" value="Male" >Male</label>
+                    <input type="radio" name="gender" value="Female">Female
+                    <input type="radio" name="gender" value="Other">Other</td>
+
+                    <td><label><input type="checkbox" name="gender" value="Male" >Male</label>
+                        <input type="checkbox" name="gender" value="Female">Female
+                        <input type="checkbox" name="gender" value="Other">Other</td>
+
+                </tr>
+                <tr>
+                    <td>
+                        price
+                    </td>
+                    <td>
+                        <input type="range" min="0" max="1000" step="1" name="price" oninput="num.value=this.value">
+                        <input type="text" disable id="num">
+                    </td>
+                </tr>
+             
+                <tr>
+                    <td>DATE</td>
+                    <td><input type="date" name="date" min="2005-12-30"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="image" src="images.png">
+                    </td>
+                </tr>
+                <tr>
+                  <td><textarea name="text" placeholder="enter text" rows="20" cols="20"></textarea></td>  
+                </tr>
+                <tr>
+                    <td>
+                        <select name="area" value="area" >
+                            <option selected hidden>select area</option>
+                            <optgroup label="amdavad">
+                                <option value="m">m</option>
+                                <option value="b">b</option>
+                                <option value="i">i</option>
+                            </optgroup>
+                            <optgroup label="gandhinagar">
+                                <option value="sec 1">sec-1</option>
+                                <option value="sec 2">sec-2</option>
+                            </optgroup>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit">
+                    <input type="reset"></td>
+                </tr>
+        </table>
+        </fieldset>
+        </form>
+    </body>
+</html>
